@@ -4,6 +4,7 @@ package chess;
 import boardgame.Board;
 import boardgame.Piece;
 
+//classe de definição de cor da peça do jogo.
 public class ChessPiece extends Piece {
     private Color color;
 

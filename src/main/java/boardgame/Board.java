@@ -5,6 +5,7 @@ public class Board {
     private int columns;
     private Piece[][] pieces;
 
+    //classe que possui o construtor do tabuleiro.
     public Board(int rows, int columns) {
         this.rows = rows;
         this.columns = columns;
@@ -35,4 +36,9 @@ public class Board {
         return pieces[position.getRow()][position.getColumn()];
     }
     
+    //método responsável por colocar uma peça em uma posição.
+    public void placePiece(Piece piece, Position position){
+        pieces[position.getRow()][position.getColumn()] = piece;
+        piece.position = position;
+    }
 }
